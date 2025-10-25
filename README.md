@@ -1,20 +1,18 @@
-BÀI TẬP 02 – LẬP TRÌNH WEB
+# BÀI TẬP 02 – LẬP TRÌNH WEB
 
-Sinh viên: Lâm Nguyễn Minh Lượng
-MSSV: K225480106013
-Ngày giao: 19/10/2025
-Hạn nộp: 26/10/2025
+Sinh viên: Lăng Nguyễn Minh Lượng
+MSSV: K225480106044
 
-I. MỤC TIÊU
+
+# I. MỤC TIÊU
 
 Tạo một website cá nhân có front-end (HTML/CSS/JS) chạy trên Apache, kết nối tới backend Node-RED qua API, sử dụng CSDL SQL Server 2022.
 Mọi tiến trình làm bài được ghi lại trên GitHub.
 
-II. HƯỚNG DẪN TỪNG BƯỚC
-🔹 1. Tạo repository GitHub
+# II. HƯỚNG DẪN TỪNG BƯỚC
+ 1. Tạo repository GitHub
 
-Truy cập https://github.com/new
-.
+Truy cập https://github.com/
 
 Tạo repo tên: Apache.
 
@@ -24,15 +22,17 @@ Sau khi tạo, dùng nút Add file → Create new file → README.md.
 
 Ghi mô tả từng bước làm, chụp màn hình (Ctrl + PrtSc), dán vào file qua Markdown:
 
-![Ảnh minh họa](link_ảnh)
+
 
 
 Cập nhật tiến trình 15–30 phút/lần.
 
-🔹 2. Cài đặt Apache Web Server
+ 2. Cài đặt Apache Web Server
 2.1. Tắt IIS (nếu có)
 
-Mở CMD (Run as Administrator)
+Mở CMD (adm)
+
+nhập lệnh
 
 iisreset /stop
 
@@ -79,9 +79,9 @@ httpd.exe -k start
 
 
 → Mở trình duyệt: http://lamnguyenminhluong.com
-Nếu hiện “It works!” là thành công ✅
+Nếu hiện “It works!” là thành công 
 
-🔹 3. Cài đặt Node.js và Node-RED
+ 3. Cài đặt Node.js và Node-RED
 3.1. Tải Node.js
 
 Vào https://nodejs.org/en
@@ -117,7 +117,7 @@ nssm install NodeRED
 
 Start service.
 
-🔹 4. Tạo CSDL SQL Server
+ 4. Tạo CSDL SQL Server
 
 Mở SQL Server Management Studio
 
@@ -139,7 +139,7 @@ Nhập dữ liệu mẫu:
 INSERT INTO ThongTinCaNhan VALUES
 (N'Lâm Nguyễn Minh Lượng', '2003-11-12', N'Nam', N'Lập trình, nghe nhạc');
 
-🔹 5. Kết nối Node-RED với SQL Server
+ 5. Kết nối Node-RED với SQL Server
 
 Mở Node-RED: http://localhost:1880
 
@@ -179,7 +179,7 @@ return msg;
 Deploy → Test:
 http://localhost:1880/thongtin
 
-🔹 6. Tạo Front-End HTML/JS/CSS
+6. Tạo Front-End HTML/JS/CSS
 
 Tạo thư mục:
 
@@ -227,6 +227,6 @@ fetch('http://localhost:1880/thongtin')
 
 → Mở trình duyệt: http://lamnguyenminhluong.com
 
-Nếu hiện dữ liệu từ SQL ⇒ Hoàn tất ✅
+Nếu hiện dữ liệu từ SQL ==> Hoàn tất 
 
-🔹 7. Viết phần nhận xét cá nhân
+ 7. Viết phần nhận xét cá nhân
