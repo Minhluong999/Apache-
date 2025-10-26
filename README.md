@@ -126,23 +126,26 @@ Start service.
 
 Mở SQL Server Management Studio
 
-Tạo database: My_Profile
+Tạo database: BT2
 
 Tạo bảng ví dụ:
 
-CREATE TABLE ThongTinCaNhan (
+USE BT2;
+GO
+CREATE TABLE dbo.ThietBi (
     ID INT IDENTITY(1,1) PRIMARY KEY,
-    HoTen NVARCHAR(100),
-    NgaySinh DATE,
-    GioiTinh NVARCHAR(10),
-    SoThich NVARCHAR(200)
+    TenThietBi NVARCHAR(100),
+    TrangThai NVARCHAR(50),
+    GiaTri FLOAT,
+    ThoiGian DATETIME DEFAULT GETDATE()
 );
+GO
 
 
 Nhập dữ liệu mẫu:
 
-INSERT INTO ThongTinCaNhan VALUES
-(N'Lâm Nguyễn Minh Lượng', '2003-11-12', N'Nam', N'Lập trình, nghe nhạc');
+INSERT INTO ThietBi VALUES
+(N'MayTinh', 'N'Tot',N'Lập trình, nghe nhạc');
 
  5. Kết nối Node-RED với SQL Server
 
