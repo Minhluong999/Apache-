@@ -146,10 +146,7 @@ CREATE TABLE dbo.ThietBi (
 GO
 
 
-Nhập dữ liệu mẫu:
-
-INSERT INTO ThietBi VALUES
-(N'MayTinh', 'N'Tot',N'Lập trình, nghe nhạc');
+Nhập dữ liệu mẫu
 
  5. Kết nối Node-RED với SQL Server
 
@@ -189,7 +186,14 @@ return msg;
 Đặt http in URL = /thongtin
 
 Deploy → Test:
-http://localhost:1880/thongtin
+
+http://localhost:1880/timkiem?q=cảm
+
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/61854e6c-d5e8-4a31-a512-8d1f69c44356" />
+
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2c8955e0-3b2f-4401-a37a-2be5bd224e2b" />
 
 6. Tạo Front-End HTML/JS/CSS
 
