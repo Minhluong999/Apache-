@@ -199,7 +199,11 @@ http://localhost:1880/timkiem?q=cảm
 
 Tạo thư mục:
 
-D:\Apache24\lamnguyenminhluong\
+D:\Apache24\htdocs\langnguyenminhluong\
+
+chạy http://localhost/langnguyenminhluong/
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b14393e8-4041-4045-a6d6-2e9c53059a6e" />
 
 6.1. index.html
 <!DOCTYPE html>
