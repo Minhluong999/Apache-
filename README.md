@@ -106,6 +106,10 @@ node-red
 
 Truy cập: http://localhost:1880
 
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/968ddc44-9506-42f6-b9c8-a94b46227e09" />
+
+
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ee786ace-74f8-4204-bf8b-5114dc2af7bd" />
 
 
