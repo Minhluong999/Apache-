@@ -28,9 +28,9 @@ Cập nhật tiến trình 15–30 phút/lần.
 Mở CMD (adm)
 
 nhập lệnh
-
+```
 iisreset /stop
-
+```
 2.2. Tải Apache
 
 Tải từ: https://www.apachelounge.com/download/
@@ -67,14 +67,14 @@ Mở D:\Apache24\conf\extra\httpd-vhosts.conf, thêm:
 2.6. Map domain
 
 Mở file: C:\Windows\System32\drivers\etc\hosts
-
+```
 127.0.0.1 lamnguyenminhluong.com
-
+```
 2.7. Cài đặt Apache làm service
+```
 httpd.exe -k install
 httpd.exe -k start
-
-
+```
 → Mở trình duyệt: http://lamnguyenminhluong.com
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ad5f1978-8961-414d-b828-98d56612cb56" />
@@ -92,9 +92,9 @@ Cài đặt tại: E:\DataAutoBackup\nodejs
 3.2. Cài Node-RED
 
 Mở CMD (Administrator):
-
+```
 npm install -g --unsafe-perm node-red
-
+```
 
 Kiểm tra:
 
@@ -115,10 +115,9 @@ Truy cập: http://localhost:1880
 Tải nssm từ https://nssm.cc/download
 
 Mở CMD:
-
+```
 nssm install NodeRED
-
-
+```
 Điền đường dẫn Node.js + đối số node-red
 
 Start service.
@@ -130,7 +129,7 @@ Mở SQL Server Management Studio
 Tạo database: BT2
 
 Tạo bảng ví dụ:
-
+```
 USE BT2;
 GO
 CREATE TABLE dbo.ThietBi (
@@ -141,7 +140,7 @@ CREATE TABLE dbo.ThietBi (
     ThoiGian DATETIME DEFAULT GETDATE()
 );
 GO
-
+```
 
 Nhập dữ liệu mẫu
 
@@ -150,6 +149,7 @@ Nhập dữ liệu mẫu
 Mở Node-RED: http://localhost:1880
 
 Cài node:
+```
 
 node-red-contrib-mssql-plus
 
@@ -160,11 +160,11 @@ node-red-contrib-telegrambot
 node-red-contrib-moment
 
 node-red-contrib-cron-plus
-
+```
 Kéo node http in → function → mssql → http response
 
 Cấu hình mssql:
-
+```
 {
   "user": "sa",
   "password": "123",
@@ -172,13 +172,13 @@ Cấu hình mssql:
   "database": "My_Profile",
   "port": 1433
 }
-
+```
 
 Trong node function:
-
+```
 msg.payload = "SELECT * FROM ThongTinCaNhan";
 return msg;
-
+```
 
 Đặt http in URL = /thongtin
 
@@ -203,6 +203,7 @@ chạy http://localhost/langnguyenminhluong/
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b14393e8-4041-4045-a6d6-2e9c53059a6e" />
 
 6.1. index.html
+```
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -216,8 +217,9 @@ chạy http://localhost/langnguyenminhluong/
   <script src="main.js"></script>
 </body>
 </html>
-
+```
 6.2. style.css
+```
 body {
   font-family: Arial;
   background: #f4f4f4;
@@ -228,8 +230,9 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-
+```
 6.3. main.js
+```
 fetch('http://localhost:1880/thongtin')
   .then(res => res.json())
   .then(data => {
@@ -240,7 +243,7 @@ fetch('http://localhost:1880/thongtin')
     document.getElementById('info').innerHTML = html;
   })
   .catch(err => console.error(err));
-
+```
 
 → Mở trình duyệt: http://lamnguyenminhluong.com
 
