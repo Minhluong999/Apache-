@@ -79,7 +79,9 @@ httpd.exe -k start
 
 
 → Mở trình duyệt: http://lamnguyenminhluong.com
-Nếu hiện “It works!” là thành công 
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ad5f1978-8961-414d-b828-98d56612cb56" />
+
 
  3. Cài đặt Node.js và Node-RED
 3.1. Tải Node.js
