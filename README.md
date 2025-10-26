@@ -4,31 +4,26 @@ Sinh viên: Lăng Nguyễn Minh Lượng
 MSSV: K225480106044
 
 
-# I. MỤC TIÊU
+## I. MỤC TIÊU
 
-Tạo một website cá nhân có front-end (HTML/CSS/JS) chạy trên Apache, kết nối tới backend Node-RED qua API, sử dụng CSDL SQL Server 2022.
-Mọi tiến trình làm bài được ghi lại trên GitHub.
+Xây dựng một website cá nhân có front-end (HTML/CSS/JS) chạy trên Apache Web Server, kết nối tới back-end Node-RED thông qua API, và sử dụng CSDL SQL Server 2022 để lưu trữ dữ liệu.
+Toàn bộ tiến trình được ghi lại trên GitHub.
 
-# II. HƯỚNG DẪN TỪNG BƯỚC
+## II. HƯỚNG DẪN TỪNG BƯỚC
  1. Tạo repository GitHub
 
-Truy cập https://github.com/
+Truy cập: https://github.com
 
-Tạo repo tên: Apache.
+Tạo repo tên: Apache-
 
 Chọn Public.
 
-Sau khi tạo, dùng nút Add file → Create new file → README.md.
-
-Ghi mô tả từng bước làm, chụp màn hình (Ctrl + PrtSc), dán vào file qua Markdown:
-
-
-
+Tạo file README.md để ghi lại quá trình làm việc, chụp màn hình, ghi chú chi tiết các bước.
 
 Cập nhật tiến trình 15–30 phút/lần.
 
  2. Cài đặt Apache Web Server
-2.1. Tắt IIS (nếu có)
+ 2.1. Tắt IIS (nếu có)
 
 Mở CMD (adm)
 
@@ -52,13 +47,15 @@ D:\Apache24\
 Mở D:\Apache24\conf\httpd.conf
 
 Define SRVROOT "D:/Apache24"
+
 ServerName localhost:80
+
 Include conf/extra/httpd-vhosts.conf
 
 2.5. Tạo Virtual Host
 
 Mở D:\Apache24\conf\extra\httpd-vhosts.conf, thêm:
-
+```
 <VirtualHost *:80>
     ServerAdmin admin@lamnguyenminhluong.com
     DocumentRoot "D:/Apache24/lamnguyenminhluong"
@@ -66,7 +63,7 @@ Mở D:\Apache24\conf\extra\httpd-vhosts.conf, thêm:
     ErrorLog "logs/lam_error.log"
     CustomLog "logs/lam_access.log" common
 </VirtualHost>
-
+```
 2.6. Map domain
 
 Mở file: C:\Windows\System32\drivers\etc\hosts
