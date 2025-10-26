@@ -106,6 +106,9 @@ node-red
 
 Truy cập: http://localhost:1880
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ee786ace-74f8-4204-bf8b-5114dc2af7bd" />
+
+
 3.3. Cài Node-RED làm service (tùy chọn)
 
 Tải nssm từ https://nssm.cc/download
